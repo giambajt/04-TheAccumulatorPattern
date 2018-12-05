@@ -188,10 +188,10 @@ def draw_lines(n, point, window):
     y=point.y
     endy = y+100
     for k in range(n):
-        #endy = (y/n) + ((y/n)*((n+1)-k))
+        print(endy)
         line = rg.Line(point, rg.Point(endx,endy))
         line.attach_to(window)
-        endy = endy-(endy/n)
+        endy = endy-(200/(n-1))
     window.render()
 
 
